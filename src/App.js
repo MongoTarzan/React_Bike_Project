@@ -1,22 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import { Link } from 'react-router-dom';
+import Routes from './BikeRoutes';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> anlkkadfhashd save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Willkommen auf deiner Motorrad-Website!</h1>
+        <div className="Button-container">
+          <Link to="/gear-and-shoewear" className="NavigateButton">
+            Schutzkleidung &amp; Schuhwerk
+          </Link>
+          <br></br>
+          <Link to="/driving-tips" className="NavigateButton">
+            Fahrtipps
+          </Link>
+          <br></br>
+          <Link to="/buying-and-dealers" className="NavigateButton">
+            Kauf &amp; Händler
+          </Link>
+          <br></br>
+          <Link to="/legal-tips" className="NavigateButton  ">
+            Rechtliche Tipps
+          </Link>         
+        </div>
       </header>
     </div>
   );

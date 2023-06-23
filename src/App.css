@@ -2,37 +2,106 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.BackButton {
+  text-decoration: none;
+  cursor: pointer;
+  color: #2e8efb;
+  rotate: 270deg;
+  font-size: 60px;
+  position: fixed;
+  top: 25px;
+  left:40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.NavigateButton{
+  text-decoration: none;
+  background-color: rgba(237, 219, 219, 0.05);
+  border-radius: 8px;
+  border-width: 0;
+  color: #748485;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 25px;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.NavigateButton:hover {
+  box-shadow: rgba(177, 174, 174, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+
+body {
+  margin: 0;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #2c3139;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  vertical-align: top;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.gearAndShoewear {
+  background-color: #2c3139;
+  min-height: 150vh;
+  display: flex;
+  flex-direction: column;
+  vertical-align: top;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.buyingAndDealers {
+  background-color: #2c3139;
+  min-height: 150vh;
+  display: flex;
+  flex-direction: column;
+  vertical-align: top;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.drivingTips {
+  background-color: #2c3139;
+  min-height: 150vh;
+  display: flex;
+  flex-direction: column;
+  vertical-align: top;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.legalTips {
+  background-color: #2c3139;
+  min-height: 150vh;
+  display: flex;
+  flex-direction: column;
+  vertical-align: top;
+  text-align: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
